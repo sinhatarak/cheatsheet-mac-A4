@@ -19,8 +19,14 @@ Setup my mac laptop for development env
 | Name                            | Comment                                                                   |
 | :-----------------------------  | ------------------------------------------------------------------------- |
 | Share files across intranet     | `System Preferences -> Sharing -> File Sharing`, then `\\192.168.XX.XXX`  |
-| Backup mac OSX safari bookmarks | `~/Library/Safari/Bookmarks.plist`                                        |
 | Lock the screen                 | `Ctrl + Shift + Power`                                                    |
+
+## Web browser
+
+| Name                            | Comment                                                                   |
+| :-----------------------------  | ------------------------------------------------------------------------- |
+| Backup mac OSX safari bookmarks | `~/Library/Safari/Bookmarks.plist`                                        |
+| Chrome undo closed tab          | `Command + Shift + T`                                                     |
 
 ## Clean & Release disk
 

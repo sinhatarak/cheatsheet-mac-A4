@@ -10,15 +10,17 @@ See more CheatSheets from Denny: [here](https://github.com/topics/denny-cheatshe
 Setup my mac laptop for development env
 
 - [code](code): provision mac env
+- [cron](cron): crontab I usually install
 - [README.org](README.org): personal knowledge-base
 - TODO: use brewfile to automate the setup
 
 ## Summary
 
-| Name                            | Comment                                                                 |
-| :--------------------------     | ----------------------------------------------------------------------- |
-| Share files across intranet     | `System Preferences -> Sharing -> File Sharing`, then \\192.168.XX.XXX  |
-| backup mac OSX safari bookmarks | `~/Library/Safari/Bookmarks.plist`                                      |
+| Name                            | Comment                                                                   |
+| :-----------------------------  | ------------------------------------------------------------------------- |
+| Share files across intranet     | `System Preferences -> Sharing -> File Sharing`, then `\\192.168.XX.XXX`  |
+| Backup mac OSX safari bookmarks | `~/Library/Safari/Bookmarks.plist`                                        |
+| Lock the screen                 | `Ctrl + Shift + Power`                                                    |
 
 ## Clean & Release disk
 

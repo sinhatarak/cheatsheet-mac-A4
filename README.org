@@ -8,6 +8,100 @@
 #+ARCHIVE: %s_done::** Finished Tasks
 #+AUTHOR: dennyzhang.com (denny@dennyzhang.com)
 #+OPTIONS: toc:2 \n:t ^:nil creator:nil d:nil
+* DONE [#A] Blog: setup mac workstation                           :IMPORTANT:
+  CLOSED: [2017-12-03 Sun 23:05]
+
+bash ~/Dropbox/private_data/emacs_stuff/backup_small/setup_mac.sh
+** DONE install dropbox, emacs, iterm
+   CLOSED: [2017-12-01 Fri 12:06]
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** DONE enable one click tap
+   CLOSED: [2017-12-01 Fri 10:17]
+** DONE install homebrew
+   CLOSED: [2017-12-03 Sun 23:06]
+** DONE mac setup: sudo easy_install pip
+   CLOSED: [2017-12-02 Sat 18:38]
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** DONE install docker daemon, and virtualbox
+   CLOSED: [2017-12-01 Fri 13:08]
+** DONE Enable dropbox sync
+   CLOSED: [2017-12-01 Fri 13:08]
+** DONE install chrome for web browsing
+   CLOSED: [2017-12-01 Fri 14:41]
+** DONE swap Cap and Command key
+   CLOSED: [2017-12-01 Fri 14:41]
+https://support.apple.com/kb/PH25240?locale=en_US
+** DONE configure VPN
+   CLOSED: [2017-12-01 Fri 15:02]
+** DONE mac setup: git config --global --edit
+  CLOSED: [2017-12-01 Fri 22:46]
+bash-3.2$ git commit -am 'mark todo'
+[master 8fd251b] mark todo
+ Committer: mac <mac@macs-MBP.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 14 insertions(+), 9 deletions(-)
+** DONE git diff pager: git config --global core.pager cat
+   CLOSED: [2018-01-25 Thu 13:07]
+** DONE chrome undo closed tab: Command + Shift + T
+   CLOSED: [2017-12-01 Fri 18:03]
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** DONE mac fail to install cfssl: use google go to install
+  CLOSED: [2017-12-02 Sat 10:05]
+https://github.com/cloudflare/cfssl
+** DONE mac setup: install vagrant and virtualbox: https://www.vagrantup.com/
+  CLOSED: [2017-12-02 Sat 10:23]
+https://www.virtualbox.org/wiki/Downloads
+** DONE macbook add lock to touchbar: http://osxdaily.com/2017/02/22/screen-lock-macbook-pro-touch-bar/
+   CLOSED: [2017-12-04 Mon 18:34]
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** DONE mac setup: can't open gpg
+  CLOSED: [2017-12-04 Mon 19:04]
+https://github.com/Homebrew/homebrew-core/issues/14737
+
+brew install pinentry-mac
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+killall gpg-agent
+** TODO mac setup: create crontab
+** DONE mac setup: install aws credential: pip install aws
+   CLOSED: [2017-12-05 Tue 09:50]
+** DONE mac setup: mac setup: input chinese: 搜狗五笔输入法
+  CLOSED: [2017-12-07 Thu 12:52]
+https://pinyin.sogou.com/mac/wubi.php
+** HALF wechat mac
+https://weixin.qq.com/cgi-bin/readtemplate?t=mac&lang=en
+** DONE mac setup: use control + space to switch input method: prefs/keyboard/shortcuts and changing the shortcut to Control + Space. 
+  CLOSED: [2017-12-07 Thu 12:56]
+https://discussions.apple.com/thread/7848807?start=0&tstart=0
+** DONE mac setup: disable shortcut for Spotlight
+   CLOSED: [2017-12-07 Thu 12:55]
+** DONE mac add lock screen to menu bar: keyboard -> Customize Control Strip
+   CLOSED: [2018-01-09 Tue 09:28]
+https://www.howtogeek.com/howto/32810/how-to-lock-your-mac-os-x-display-when-youre-away/
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** DONE doc: mac setup: mkdir -p /Users/DennyZhang/.getmail/
+   CLOSED: [2018-01-16 Tue 13:01]
+** #  --8<-------------------------- separator ------------------------>8-- :noexport:
+** TODO mac setup: install docker
+** HALF mac install gpg: brew install gnupg
+** HALF chrome install plugin: fox proxy
+** ./setup_mac.sh
+** ./update_git_code.sh
+** HALF Install mutliple chrome releases
+https://www.google.com/chrome/browser/canary.html
+
+https://www.chromium.org/getting-involved/download-chromium
+** HALF brew cask install iterm2
 * iterm2
 ** iterm2 powerline compatible font mac OS
 https://github.com/powerline/fonts
@@ -24,7 +118,63 @@ https://apple.stackexchange.com/questions/98342/changing-the-default-size-of-ite
 ** powerline: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
 ** useful link
 https://gist.github.com/kevin-smets/8568070
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] mac setup: can't export pdf CV: ! Missing \endcsname inserted.
+https://tex.stackexchange.com/questions/165404/latex-error-message-missing-endcsname-inserted
+#+BEGIN_EXAMPLE
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/xstring.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/xstring.tex))
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5860 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+? 
+#+END_EXAMPLE
+** DONE 'ucharcat.sty' not found
+  CLOSED: [2017-12-04 Mon 18:14]
+https://www.resolveask.com/questions/737719/awesome-cv-ucharcat-sty-not-found
+https://stackoverflow.com/questions/1390828/how-do-i-install-a-latex-sty-file-on-osx
 
+/Users/mac/Dropbox/private_data/emacs_stuff/latex/README.md
+** DONE Unknown option 'vargreek-shape' for package unicode-math.
+  CLOSED: [2017-12-04 Mon 18:28]
+https://tex.stackexchange.com/questions/355888/why-does-copying-my-sharelatex-project-cause-it-to-not-compile
+
+https://tex.stackexchange.com/questions/353136/compilation-error-option-unknown-unicode-math
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/filehook/filehook.sty)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! keyvalue error: "option-unknown"
+! 
+! Unknown option 'vargreek-shape' for package unicode-math.
+! 
+! See the keyvalue documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.385 \ProcessKeysOptions {unicode-math}
+                                        
+? 
+! Emergency stop.
+!...............................................  
+                                                  
+l.385 \ProcessKeysOptions {unicode-math}
+                                        
+No pages of output.
+Transcript written on denny_cv_devops_2017.log.
+* TODO mac setup: enable to quit Finder
+* HALF mac setup: install latex: http://www.texts.io/support/0001/
+* DONE change chromiuem background colors for better health: Care your Eyes
+  CLOSED: [2018-06-14 Thu 09:59]
+https://chrome.google.com/webstore/detail/care-your-eyes/fidmpnedniahpnkeomejhnepmbdamlhl/related?hl=en
+* TODO [#A] Mac remote control, try GoToMeeting
+* DONE mac open mkv video: http://www.videolan.org/vlc/index.html
+  CLOSED: [2016-10-20 Thu 23:48]
 
 * [#A] Apple mac OSX                                         :Linux:Personal:
 :PROPERTIES:
@@ -32,27 +182,27 @@ https://gist.github.com/kevin-smets/8568070
 :END:
 
 - 快捷键
-| Name                                  | Comment                                |
-|---------------------------------------+----------------------------------------|
-| terminal 分屏                         | command + d                            |
-| 恢复terminal分屏的效果                | command + shift+ d                     |
-| 锁屏幕                                | control + shift + power/eject          |
-| mac通过快捷键最大化                   | control + command + f                  |
-| 类似“右键”的效果                      | 触摸板是同时两个手指按下               |
-| 快捷键回到桌面                        | 在非全屏下，按F11                      |
-|---------------------------------------+----------------------------------------|
-| 打开文件管理器                        | command + o                            |
-| 打开文件                              | command + o                            |
-| 快捷键打开一个finder界面              | option + command + space               |
-| 在finder界面中输入路径名              | command + shift + g                    |
-| 对于当前程序打开一个新的实例          | command + n                            |
-| Turn off/on Dock Hiding               | command + option + d                   |
-| 强制退出应用程序                      | command+option+esc                     |
-| 在相同应用程序的不同窗口间切换        | Command + ~                            |
-|---------------------------------------+----------------------------------------|
-| 查看多张图片                          | Command + a全选, Command +o 打开       |
-| mac finder跳到上一层目录              | 点击右下方的路径                       |
-| mac连接windows共享文件夹              | smb://DOMAIN;User@ServerName/ShareName |
+| Name                           | Comment                                |
+|--------------------------------+----------------------------------------|
+| terminal 分屏                  | command + d                            |
+| 恢复terminal分屏的效果         | command + shift+ d                     |
+| 锁屏幕                         | control + shift + power/eject          |
+| mac通过快捷键最大化            | control + command + f                  |
+| 类似“右键”的效果               | 触摸板是同时两个手指按下               |
+| 快捷键回到桌面                 | 在非全屏下，按F11                      |
+|--------------------------------+----------------------------------------|
+| 打开文件管理器                 | command + o                            |
+| 打开文件                       | command + o                            |
+| 快捷键打开一个finder界面       | option + command + space               |
+| 在finder界面中输入路径名       | command + shift + g                    |
+| 对于当前程序打开一个新的实例   | command + n                            |
+| Turn off/on Dock Hiding        | command + option + d                   |
+| 强制退出应用程序               | command+option+esc                     |
+| 在相同应用程序的不同窗口间切换 | Command + ~                            |
+|--------------------------------+----------------------------------------|
+| 查看多张图片                   | Command + a全选, Command +o 打开       |
+| mac finder跳到上一层目录       | 点击右下方的路径                       |
+| mac连接windows共享文件夹       | smb://DOMAIN;User@ServerName/ShareName |
 
 - 软件推荐
 | Name                | Comment                 |
@@ -1677,7 +1827,6 @@ For iOS 8 sign in to iCloud or the iTunes and App Store on the device. You can a
 For OS X Yosemite and later or Windows 10 and later, sign in to iCloud on the device. 
 For tvOS 7 and later, sign in to the iTunes and App Store on the device.
 If any of your devices are using earlier versions of iOS, OS X, or tvOS, you won’t see them in your device list.
-
 ** DONE mac gem install error
    CLOSED: [2017-01-07 Sat 22:49]
 http://stackoverflow.com/questions/30812777/cannot-install-cocoa-pods-after-uninstalling-results-in-error/30851030#30851030
@@ -1688,21 +1837,12 @@ sudo gem install -n /usr/local/bin cocoapods
 ERROR:  While executing gem ... (Errno::EPERM)
     Operation not permitted - /usr/bin/rubocop
 #+END_EXAMPLE
-
-
-* TODO [#A] Mac remote control, try GoToMeeting
-* DONE mac open mkv video: http://www.videolan.org/vlc/index.html
-  CLOSED: [2016-10-20 Thu 23:48]
-
 * DONE mac setup path: ~/.profile
   CLOSED: [2018-02-07 Wed 19:05]
 Open the Terminal application. It can be found in the Utilities directory inside the Applications directory.
 Type the following: echo 'export PATH=YOURPATHHERE:$PATH' >> ~/.profile, replacing "YOURPATHHERE" with the name of the directory you want to add. ...
 Hit Enter.
 Close the Terminal and reopen.
-* DONE mac lock the screen: Ctrl + Shift + Power
-  CLOSED: [2017-02-02 Thu 09:48]
-
 * DONE mac use SSD as extra memory
   CLOSED: [2015-06-13 Sat 21:47]
 Basically you already have.  The OS and apps run in virtual memory that can exceed the size of real RAM installed.

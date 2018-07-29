@@ -52,7 +52,7 @@ function update_github(){
 
 function update_cheatsheet(){
     local code_dir=${1?}
-    repo_list="cheatsheet-ruby-A4 cheatsheet-vim-A4 cheatsheet-tmux-A4 cheatsheet-bosh-A4 cheatsheet-docker-A4 cheatsheet-emacs-A4 cheatsheet-golang-A4 cheatsheet-jenkins-groovy-A4 cheatsheet-living-in-ca cheatsheet-python-A4 cheatsheet-uaac-A4 cheatsheet-jq-A4"
+    repo_list="cheatsheet-knative-A4 cheatsheet-ruby-A4 cheatsheet-vim-A4 cheatsheet-tmux-A4 cheatsheet-bosh-A4 cheatsheet-docker-A4 cheatsheet-emacs-A4 cheatsheet-golang-A4 cheatsheet-jenkins-groovy-A4 cheatsheet-living-in-ca cheatsheet-python-A4 cheatsheet-uaac-A4 cheatsheet-jq-A4"
     [ -d "$code_dir/cheatsheet" ] || mkdir -p "$code_dir/cheatsheet"
     cd "$code_dir/cheatsheet"
     for repo in ${repo_list[*]}; do
@@ -111,9 +111,9 @@ function update_kubernetes(){
     done
 }
 
+update_cheatsheet "$HOME/Dropbox/git_code"
 update_knowledgebase "$HOME/Dropbox/git_code"
 update_challenges "$HOME/Dropbox/git_code"
-update_cheatsheet "$HOME/Dropbox/git_code"
 update_kubernetes "$HOME/Dropbox/git_code"
 
 update_github "$HOME/git_code"

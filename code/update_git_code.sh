@@ -98,7 +98,7 @@ function update_knowledgebase(){
 
 function update_kubernetes(){
     local code_dir=${1?}
-    repo_list="cheatsheet-kubernetes-A4 challenges-kubernetes challenges-k8s-istio prepare-k8s-cka challenges-k8s-crd"
+    repo_list="kubernetes-security-practice cheatsheet-kubernetes-A4 challenges-kubernetes challenges-k8s-istio prepare-k8s-cka challenges-k8s-crd"
     [ -d "$code_dir/kubernetes" ] || mkdir -p "$code_dir/kubernetes"
     cd "$code_dir/kubernetes"
     for repo in ${repo_list[*]}; do
@@ -111,10 +111,10 @@ function update_kubernetes(){
     done
 }
 
+update_kubernetes "$HOME/Dropbox/git_code"
 update_cheatsheet "$HOME/Dropbox/git_code"
 update_knowledgebase "$HOME/Dropbox/git_code"
 update_challenges "$HOME/Dropbox/git_code"
-update_kubernetes "$HOME/Dropbox/git_code"
 
 update_github "$HOME/git_code"
 update_codecommit "$HOME/git_code"

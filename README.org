@@ -1,14 +1,61 @@
--*- mode:org; fill-column:70; coding:utf-8; -*-
-* org-mode configuration
+* org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone hidestars
-#+TAGS: ARCHIVE(a) WORK(w) LIFE(l) EMACS(e) IMPORTANT(i) Difficult(d) Communication(c) RECOMMENDATE(r) Tool(t) Habit(h) noexport(n) Share (s) BLOG(b)
-#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
-#+DRAWERS: HIDDEN CODE CONF EMAIL WEBPAGE SNIP
+#+TITLE:  Setup Mac As DevKit
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+AUTHOR: Denny Zhang
+#+EMAIL:  denny@dennyzhang.com
+#+TAGS: noexport(n)
 #+PRIORITIES: A D C
-#+ARCHIVE: %s_done::** Finished Tasks
-#+AUTHOR: dennyzhang.com (denny@dennyzhang.com)
-#+OPTIONS: toc:2 \n:t ^:nil creator:nil d:nil
-* DONE [#A] Blog: setup mac workstation                           :IMPORTANT:
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+EXPORT_EXCLUDE_TAGS: exclude noexport
+#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+#+LINK_UP:   
+#+LINK_HOME: 
+* Summary
+#+BEGIN_HTML
+<a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
+<a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="http://slack.dennyzhang.com/badge.svg" alt="slack"/></a>
+<a href="https://github.com/DennyZhang"><img align="right" width="200" height="183" src="https://www.dennyzhang.com/wp-content/uploads/denny/watermark/github.png" /></a>
+
+<br/><br/>
+
+<a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+#+END_HTML
+* CheatSheet
+File me [[https://github.com/DennyZhang/setup-mac-devkit/issues][Issues]] or star [[https://github.com/DennyZhang/setup-mac-devkit][this repo]].
+
+See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+** Summary
+
+| Name                            | Comment                                                                   |
+| :-----------------------------  | ------------------------------------------------------------------------- |
+| Share files across intranet     | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX=  |
+| Lock the screen                 | =Ctrl + Shift + Power=                                                    |
+
+** Web browser
+
+| Name                            | Comment                                                                   |
+| :-----------------------------  | ------------------------------------------------------------------------- |
+| Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist=                                        |
+| Chrome undo closed tab          | =Command + Shift + T=                                                     |
+
+** Clean & Release disk
+
+| Name      | Comment                                     |
+| :-------- | ------------------------------------------- |
+| Xcode     | =Library/Developer/Xcode/DerivedData=       |
+| Trash     | =~/.Trash=, =~/trash=                       |
+* More Resources
+License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
+#+BEGIN_HTML
+<a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+
+<a href="https://www.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
+#+END_HTML
+* DONE [#A] Blog: setup mac workstation                  :IMPORTANT:noexport:
   CLOSED: [2017-12-03 Sun 23:05]
 
 ** DONE install dropbox, emacs, iterm
@@ -98,7 +145,7 @@ https://www.google.com/chrome/browser/canary.html
 
 https://www.chromium.org/getting-involved/download-chromium
 ** HALF brew cask install iterm2
-* iterm2
+* iterm2                                                           :noexport:
 ** iterm2 powerline compatible font mac OS
 https://github.com/powerline/fonts
 ** DONE iterm default frame size: Preference -> Profile -> Settings for New Windows
@@ -110,68 +157,10 @@ https://apple.stackexchange.com/a/98406
 https://apple.stackexchange.com/questions/98342/changing-the-default-size-of-iterm2-when-it-opens
 ** DONE Use iterm instead of terminal. And customize your iterm colors
    CLOSED: [2018-06-14 Thu 10:03]
-* ozsh
+* ozsh                                                             :noexport:
 ** powerline: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
 ** useful link
 https://gist.github.com/kevin-smets/8568070
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO [#A] mac setup: can't export pdf CV: ! Missing \endcsname inserted.
-https://tex.stackexchange.com/questions/165404/latex-error-message-missing-endcsname-inserted
-#+BEGIN_EXAMPLE
-(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ifthen.sty)
-(/usr/local/texlive/2017basic/texmf-dist/tex/latex/url/url.sty)
-(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/xstring.sty
-(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/xstring.tex))
-! Missing \endcsname inserted.
-<to be read again> 
-                   \blx@datamodel@constant@optiondatatypes 
-l.5860 ...odel@constant@optiondatatypes\endcsname}
-                                                  
-? 
-#+END_EXAMPLE
-** DONE 'ucharcat.sty' not found
-  CLOSED: [2017-12-04 Mon 18:14]
-https://www.resolveask.com/questions/737719/awesome-cv-ucharcat-sty-not-found
-https://stackoverflow.com/questions/1390828/how-do-i-install-a-latex-sty-file-on-osx
-
-/Users/mac/Dropbox/private_data/emacs_stuff/latex/README.md
-** DONE Unknown option 'vargreek-shape' for package unicode-math.
-  CLOSED: [2017-12-04 Mon 18:28]
-https://tex.stackexchange.com/questions/355888/why-does-copying-my-sharelatex-project-cause-it-to-not-compile
-
-https://tex.stackexchange.com/questions/353136/compilation-error-option-unknown-unicode-math
-(/usr/local/texlive/2017basic/texmf-dist/tex/latex/filehook/filehook.sty)
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! keyvalue error: "option-unknown"
-! 
-! Unknown option 'vargreek-shape' for package unicode-math.
-! 
-! See the keyvalue documentation for further information.
-! 
-! For immediate help type H <return>.
-!...............................................  
-                                                  
-l.385 \ProcessKeysOptions {unicode-math}
-                                        
-? 
-! Emergency stop.
-!...............................................  
-                                                  
-l.385 \ProcessKeysOptions {unicode-math}
-                                        
-No pages of output.
-Transcript written on denny_cv_devops_2017.log.
-* TODO mac setup: enable to quit Finder
-* HALF mac setup: install latex: http://www.texts.io/support/0001/
-* DONE change chromiuem background colors for better health: Care your Eyes
-  CLOSED: [2018-06-14 Thu 09:59]
-https://chrome.google.com/webstore/detail/care-your-eyes/fidmpnedniahpnkeomejhnepmbdamlhl/related?hl=en
-* TODO [#A] Mac remote control, try GoToMeeting
-* DONE mac open mkv video: http://www.videolan.org/vlc/index.html
-  CLOSED: [2016-10-20 Thu 23:48]
-
 * [#A] Apple mac OSX                                         :Linux:Personal:
 :PROPERTIES:
 :type:   Tool
@@ -1833,24 +1822,80 @@ sudo gem install -n /usr/local/bin cocoapods
 ERROR:  While executing gem ... (Errno::EPERM)
     Operation not permitted - /usr/bin/rubocop
 #+END_EXAMPLE
-* DONE mac setup path: ~/.profile
+** TODO [#A] mac setup: can't export pdf CV: ! Missing \endcsname inserted.
+https://tex.stackexchange.com/questions/165404/latex-error-message-missing-endcsname-inserted
+#+BEGIN_EXAMPLE
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/xstring.sty
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/xstring.tex))
+! Missing \endcsname inserted.
+<to be read again> 
+                   \blx@datamodel@constant@optiondatatypes 
+l.5860 ...odel@constant@optiondatatypes\endcsname}
+                                                  
+? 
+#+END_EXAMPLE
+*** DONE 'ucharcat.sty' not found
+  CLOSED: [2017-12-04 Mon 18:14]
+https://www.resolveask.com/questions/737719/awesome-cv-ucharcat-sty-not-found
+https://stackoverflow.com/questions/1390828/how-do-i-install-a-latex-sty-file-on-osx
+
+/Users/mac/Dropbox/private_data/emacs_stuff/latex/README.md
+*** DONE Unknown option 'vargreek-shape' for package unicode-math.
+  CLOSED: [2017-12-04 Mon 18:28]
+https://tex.stackexchange.com/questions/355888/why-does-copying-my-sharelatex-project-cause-it-to-not-compile
+
+https://tex.stackexchange.com/questions/353136/compilation-error-option-unknown-unicode-math
+(/usr/local/texlive/2017basic/texmf-dist/tex/latex/filehook/filehook.sty)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! keyvalue error: "option-unknown"
+! 
+! Unknown option 'vargreek-shape' for package unicode-math.
+! 
+! See the keyvalue documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.385 \ProcessKeysOptions {unicode-math}
+                                        
+? 
+! Emergency stop.
+!...............................................  
+                                                  
+l.385 \ProcessKeysOptions {unicode-math}
+                                        
+No pages of output.
+Transcript written on denny_cv_devops_2017.log.
+** TODO mac setup: enable to quit Finder
+** HALF mac setup: install latex: http://www.texts.io/support/0001/
+** DONE change chromiuem background colors for better health: Care your Eyes
+  CLOSED: [2018-06-14 Thu 09:59]
+https://chrome.google.com/webstore/detail/care-your-eyes/fidmpnedniahpnkeomejhnepmbdamlhl/related?hl=en
+** TODO [#A] Mac remote control, try GoToMeeting
+** DONE mac open mkv video: http://www.videolan.org/vlc/index.html
+  CLOSED: [2016-10-20 Thu 23:48]
+** DONE mac setup path: ~/.profile
   CLOSED: [2018-02-07 Wed 19:05]
 Open the Terminal application. It can be found in the Utilities directory inside the Applications directory.
 Type the following: echo 'export PATH=YOURPATHHERE:$PATH' >> ~/.profile, replacing "YOURPATHHERE" with the name of the directory you want to add. ...
 Hit Enter.
 Close the Terminal and reopen.
-* DONE mac use SSD as extra memory
+** DONE mac use SSD as extra memory
   CLOSED: [2015-06-13 Sat 21:47]
 Basically you already have.  The OS and apps run in virtual memory that can exceed the size of real RAM installed.
 
 https://discussions.apple.com/thread/4251270?tstart=0
 http://superuser.com/questions/317033/convert-ssd-drive-into-more-ram
 
-* DONE mac convert VMA files to MP3: MHAudioConverter
+** DONE mac convert VMA files to MP3: MHAudioConverter
   CLOSED: [2015-12-11 Fri 14:24]
 http://www.mediahuman.com/audio-converter/downloading-mac.html
 
-* DONE what does the @ mean in ls -l on mac OSx : xattr
+** DONE what does the @ mean in ls -l on mac OSx : xattr
   CLOSED: [2015-04-29 Wed 10:06]
 https://mackuba.eu/2008/06/30/ls-on-mac-and-extended-file-attributes/
 

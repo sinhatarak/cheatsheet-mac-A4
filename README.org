@@ -30,24 +30,22 @@ File me [[https://github.com/DennyZhang/setup-mac-devkit/issues][Issues]] or sta
 See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 ** Summary
 
-| Name                            | Comment                                                                   |
-| :-----------------------------  | ------------------------------------------------------------------------- |
-| Share files across intranet     | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX=  |
-| Lock the screen                 | =Ctrl + Shift + Power=                                                    |
+| Name                        | Comment                                                                  |
+|-----------------------------+--------------------------------------------------------------------------|
+| Share files across intranet | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX= |
+| Lock the screen             | =Ctrl + Shift + Power=                                                   |
 
 ** Web browser
-
-| Name                            | Comment                                                                   |
-| :-----------------------------  | ------------------------------------------------------------------------- |
-| Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist=                                        |
-| Chrome undo closed tab          | =Command + Shift + T=                                                     |
+| Name                            | Comment                            |
+|---------------------------------+------------------------------------|
+| Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist= |
+| Chrome undo closed tab          | =Command + Shift + T=              |
 
 ** Clean & Release disk
-
-| Name      | Comment                                     |
-| :-------- | ------------------------------------------- |
-| Xcode     | =Library/Developer/Xcode/DerivedData=       |
-| Trash     | =~/.Trash=, =~/trash=                       |
+| Name  | Comment                               |
+|-------+---------------------------------------|
+| Xcode | =Library/Developer/Xcode/DerivedData= |
+| Trash | =~/.Trash=, =~/trash=                 |
 * More Resources
 License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
 #+BEGIN_HTML
@@ -161,7 +159,7 @@ https://apple.stackexchange.com/questions/98342/changing-the-default-size-of-ite
 ** powerline: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
 ** useful link
 https://gist.github.com/kevin-smets/8568070
-* [#A] Apple mac OSX                                         :Linux:Personal:
+* [#A] Apple mac OSX                                :noexport:Linux:Personal:
 :PROPERTIES:
 :type:   Tool
 :END:

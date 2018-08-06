@@ -9,7 +9,7 @@
 ## Description :
 ## --
 ## Created : <2017-12-04>
-## Updated: Time-stamp: <2018-07-18 16:24:46>
+## Updated: Time-stamp: <2018-08-03 11:14:01>
 ##-------------------------------------------------------------------
 set -e
 
@@ -19,9 +19,15 @@ function brew_install() {
     brew install gpg aspell w3m shadowsocks-libev wget imagemagick msmtp
     brew install telnet shellcheck go getmail tmux
     brew install python3 getmail
-    brew install jq ansible
+    brew install jq ansible direnv
     brew install reattach-to-user-namespace
+    brew install chruby
     brew cask install ngrok
+}
+
+function brew_install_devkit() {
+    echo "Brew install devkit"
+    brew install kubernetes-helm
 }
 
 function python_setup() {
@@ -33,6 +39,10 @@ function download_files() {
     wget -O /usr/local/bin/gh-md-toc https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
     chmod a+x /usr/local/bin/gh-md-toc
     which gh-md-toc
+    if [ ! -f ~/.git-prompt.sh ]; then
+        curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+        echo 'source ~/.git-prompt.sh' > /usr/local/etc/bash_completion.d/git-prompt.sh
+    fi
 }
 function fix_gpg() {
     # https://github.com/Homebrew/homebrew-core/issues/14737
@@ -83,6 +93,7 @@ ssh_config
 
 download_files
 brew_install
+brew_install_devkit
 fetch_email
 fix_gpg
 ## File: setup_mac.sh ends

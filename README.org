@@ -40,6 +40,14 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 |---------------------------------+------------------------------------|
 | Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist= |
 | Chrome undo closed tab          | =Command + Shift + T=              |
+*** chromiue avoid change tgz to tar
+  https://superuser.com/questions/940605/chromium-prevent-unpacking-tar-gz
+  #+BEGIN_EXAMPLE
+  About the Chromium behavior
+
+  If we want to prevent, if need to change in server side. Doesn’t seem to have a way to change in the client side.
+  In server side: `make sure your web server serves .tar.gz files without the content-encoding: gzip header.`
+  #+END_EXAMPLE
 
 ** Clean & Release disk
 | Name  | Comment                               |
@@ -50,8 +58,11 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
 #+BEGIN_HTML
 <a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
-
 <a href="https://www.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
+
+<a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
+<a href="https://github.com/DennyZhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a>
 #+END_HTML
 * DONE [#A] Blog: setup mac workstation                  :IMPORTANT:noexport:
   CLOSED: [2017-12-03 Sun 23:05]
@@ -69,8 +80,6 @@ License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_lice
    CLOSED: [2017-12-01 Fri 13:08]
 ** DONE Enable dropbox sync
    CLOSED: [2017-12-01 Fri 13:08]
-** DONE install chrome for web browsing
-   CLOSED: [2017-12-01 Fri 14:41]
 ** DONE swap Cap and Command key
    CLOSED: [2017-12-01 Fri 14:41]
 https://support.apple.com/kb/PH25240?locale=en_US
@@ -1900,4 +1909,3 @@ https://mackuba.eu/2008/06/30/ls-on-mac-and-extended-file-attributes/
 http://unix.stackexchange.com/questions/10/what-does-the-mean-in-ls-l
 http://ubuntuforums.org/showthread.php?t=1149891
 http://superuser.com/questions/463074/is-debian-squeezes-tar-still-lacking-a-tar-with-xattr-support
-

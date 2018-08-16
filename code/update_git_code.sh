@@ -52,7 +52,7 @@ function update_github(){
 
 function update_cheatsheet(){
     local code_dir=${1?}
-    repo_list="cheatsheet-cloudfoundry-tile-A4 cheatsheet-knative-A4 cheatsheet-ruby-A4 cheatsheet-vim-A4 cheatsheet-tmux-A4 cheatsheet-pks-A4 cheatsheet-bosh-A4 cheatsheet-docker-A4 cheatsheet-emacs-A4 cheatsheet-golang-A4 cheatsheet-jenkins-groovy-A4 cheatsheet-living-in-ca cheatsheet-python-A4 cheatsheet-uaac-A4 cheatsheet-jq-A4"
+    repo_list="cheatsheet.dennyzhang.com"
     [ -d "$code_dir/cheatsheet" ] || mkdir -p "$code_dir/cheatsheet"
     cd "$code_dir/cheatsheet"
     for repo in ${repo_list[*]}; do
@@ -68,7 +68,7 @@ function update_cheatsheet(){
 
 function update_challenges(){
     local code_dir=${1?}
-    repo_list="challenges-cloudformation-jenkins challenges-chef challenges-jenkins-groovy challenges-aws-ecs challenges-shell challenges-system-design challenges-golang-datastructure challenges-python-datastructure challenges-leetcode-interesting"
+    repo_list="challenges-fluent-bit challenges-cloudformation-jenkins challenges-chef challenges-jenkins-groovy challenges-aws-ecs challenges-shell challenges-system-design challenges-golang-datastructure challenges-python-datastructure challenges-leetcode-interesting"
     [ -d "$code_dir/challenges" ] || mkdir -p "$code_dir/challenges"
     cd "$code_dir/challenges"
     for repo in ${repo_list[*]}; do
@@ -83,7 +83,7 @@ function update_challenges(){
 
 function update_knowledgebase(){
     local code_dir=${1?}
-    repo_list="book-reading-cloud linkedin-grow-influence maintain-it-blog maintain-github-repos cheatsheet-living-in-ca developer-technical-selling setup-mac-devkit"
+    repo_list="book-reading-cloud linkedin-grow-influence maintain-it-blog maintain-github-repos developer-technical-selling setup-mac-devkit"
     [ -d "$code_dir/knowledgebase" ] || mkdir -p "$code_dir/knowledgebase"
     cd "$code_dir/knowledgebase"
     for repo in ${repo_list[*]}; do
@@ -98,7 +98,7 @@ function update_knowledgebase(){
 
 function update_kubernetes(){
     local code_dir=${1?}
-    repo_list="kubernetes-security-practice cheatsheet-kubernetes-A4 challenges-kubernetes challenges-k8s-istio prepare-k8s-cka challenges-k8s-crd"
+    repo_list="kubernetes-security-practice challenges-kubernetes challenges-k8s-istio prepare-k8s-cka challenges-k8s-crd"
     [ -d "$code_dir/kubernetes" ] || mkdir -p "$code_dir/kubernetes"
     cd "$code_dir/kubernetes"
     for repo in ${repo_list[*]}; do
@@ -111,10 +111,10 @@ function update_kubernetes(){
     done
 }
 
+update_challenges "$HOME/Dropbox/git_code"
 update_cheatsheet "$HOME/Dropbox/git_code"
 update_kubernetes "$HOME/Dropbox/git_code"
 update_knowledgebase "$HOME/Dropbox/git_code"
-update_challenges "$HOME/Dropbox/git_code"
 
 update_github "$HOME/git_code"
 update_codecommit "$HOME/git_code"

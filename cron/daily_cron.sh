@@ -5,7 +5,7 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-07-29 14:57:57>
+## Updated: Time-stamp: <2018-08-19 11:30:23>
 ##-------------------------------------------------------------------
 # 0 10 * * * ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/daily_cron.sh
 function log {
@@ -29,11 +29,11 @@ function shell_exit {
 
 trap shell_exit SIGHUP SIGINT SIGTERM 0
 ################################################################################
-LOG_FILE="/var/log/daily_cron.log"
+LOG_FILE="/var/log/cron/daily_cron.log"
 
-cd "/Users/$(whoami)/git_code"
-curl -L https://raw.githubusercontent.com/dennyzhang/git_pull_folder/master/git_pull_folder.py | python
+# cd "/Users/$(whoami)/git_code"
+# curl -L https://raw.githubusercontent.com/dennyzhang/git_pull_folder/master/git_pull_folder.py | python
 
-cd "/Users/$(whoami)/Dropbox/git_code/challenges/challenges-leetcode-interesting/"
+cd "/Users/$(whoami)/Dropbox/git_code/code.dennyzhang.com/"
 git pull origin master
 # bash automate.sh refresh_md

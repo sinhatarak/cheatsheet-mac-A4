@@ -50,37 +50,6 @@ function update_github(){
     done
 }
 
-function update_cheatsheet(){
-    local code_dir=${1?}
-    repo_list="cheatsheet.dennyzhang.com"
-    [ -d "$code_dir/cheatsheet" ] || mkdir -p "$code_dir/cheatsheet"
-    cd "$code_dir/cheatsheet"
-    for repo in ${repo_list[*]}; do
-        if [ ! -d "$repo" ]; then
-            echo "git clone git@github.com:dennyzhang/${repo}.git"
-            git clone "git@github.com:dennyzhang/${repo}.git"
-        else
-            echo "Update $repo"
-            (cd "$repo" && git pull origin master)
-        fi
-    done
-}
-
-function update_challenges(){
-    local code_dir=${1?}
-    repo_list="challenges-fluent-bit challenges-cloudformation-jenkins challenges-chef challenges-jenkins-groovy challenges-aws-ecs challenges-shell challenges-system-design challenges-golang-datastructure challenges-python-datastructure challenges-leetcode-interesting"
-    [ -d "$code_dir/challenges" ] || mkdir -p "$code_dir/challenges"
-    cd "$code_dir/challenges"
-    for repo in ${repo_list[*]}; do
-        if [ ! -d "$repo" ]; then
-            echo "git clone git@github.com:dennyzhang/${repo}.git"
-            git clone "git@github.com:dennyzhang/${repo}.git"
-        else
-            (cd "$repo" && git pull origin master)
-        fi
-    done
-}
-
 function update_knowledgebase(){
     local code_dir=${1?}
     repo_list="book-reading-cloud linkedin-grow-influence maintain-it-blog maintain-github-repos developer-technical-selling setup-mac-devkit"
@@ -96,24 +65,6 @@ function update_knowledgebase(){
     done
 }
 
-function update_kubernetes(){
-    local code_dir=${1?}
-    repo_list="kubernetes-security-practice challenges-kubernetes challenges-k8s-istio prepare-k8s-cka challenges-k8s-crd"
-    [ -d "$code_dir/kubernetes" ] || mkdir -p "$code_dir/kubernetes"
-    cd "$code_dir/kubernetes"
-    for repo in ${repo_list[*]}; do
-        if [ ! -d "$repo" ]; then
-            echo "git clone git@github.com:dennyzhang/${repo}.git"
-            git clone "git@github.com:dennyzhang/${repo}.git"
-        else
-            (cd "$repo" && git pull origin master)
-        fi
-    done
-}
-
-update_challenges "$HOME/Dropbox/git_code"
-update_cheatsheet "$HOME/Dropbox/git_code"
-update_kubernetes "$HOME/Dropbox/git_code"
 update_knowledgebase "$HOME/Dropbox/git_code"
 
 update_github "$HOME/git_code"

@@ -9,7 +9,7 @@
 ## Description :
 ## --
 ## Created : <2017-12-04>
-## Updated: Time-stamp: <2018-08-03 11:14:01>
+## Updated: Time-stamp: <2018-08-19 11:31:18>
 ##-------------------------------------------------------------------
 set -e
 
@@ -59,8 +59,9 @@ function fetch_email() {
 
 function create_crontab() {
     echo "Define crontab"
-    # TODO
-    # ~/Dropbox/private_data/emacs_stuff/backup_small/fetch_mail/fetch_mail.sh
+    if [ ! -d /var/log/cron ]; then
+        sudo mkdir -p chmod 755 /var/log/cron/ && sudo chmod 755 /var/log/cron/
+    fi
     # ~/Dropbox/private_data/emacs_stuff/backup_small/hourly_cron.sh
     # ~/Dropbox/private_data/emacs_stuff/backup_small/monthly_cron.sh
     # ~/Dropbox/private_data/emacs_stuff/backup_small/weekly_cron.sh

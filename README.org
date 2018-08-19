@@ -1909,3 +1909,13 @@ https://mackuba.eu/2008/06/30/ls-on-mac-and-extended-file-attributes/
 http://unix.stackexchange.com/questions/10/what-does-the-mean-in-ls-l
 http://ubuntuforums.org/showthread.php?t=1149891
 http://superuser.com/questions/463074/is-debian-squeezes-tar-still-lacking-a-tar-with-xattr-support
+* TODO github: start a git repo: setup mac                         :noexport:
+** make the code re-entrant
+** brew update && brew install kubectl && brew cask install docker minikube virtualbox
+https://gist.github.com/kevin-smets/b91a34cea662d0c523968472a81788f7
+** setup touch id
+** setup
+~/.ssh/config
+~/.ssh/id_rsa
+~/.ssh/id_rsa.pub
+

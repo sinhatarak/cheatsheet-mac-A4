@@ -5,7 +5,7 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-07-23 17:43:15>
+## Updated: Time-stamp: <2018-08-19 11:30:07>
 ##-------------------------------------------------------------------
 # 0 20 * * 0 ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/weekly_cron.sh
 
@@ -19,9 +19,18 @@ function log() {
     fi
 }
 
-LOG_FILE="/tmp/weekly_cron.log"
+LOG_FILE="/var/log/cron/weekly_cron.log"
 date=$(date +'%Y%m%d')
 
-> /var/mail/mac
+if [ -f /var/mail/mac ]; then
+    > /var/mail/mac
+fi
+
+for d in "cheatsheet.dennyzhang.com" "quiz.dennyzhang.com" "architect.dennyzhang.com" "code.dennyzhang.com"; do
+    cd "/Users/zdenny/Dropbox/git_code/$d"
+    echo "Recursively git push in $d"
+    make git-push >> /var/log/cron/weekly_git_publish_$d.log
+done
+
 log "Succeed to run weekly_cron.sh"
 ## File : weekly_cron.sh ends

@@ -5,7 +5,7 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-07-29 15:01:15>
+## Updated: Time-stamp: <2018-08-19 11:28:50>
 ##-------------------------------------------------------------------
 # 0 * * * * ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/hourly_cron.sh
 function log {
@@ -29,7 +29,7 @@ function shell_exit {
 
 trap shell_exit SIGHUP SIGINT SIGTERM 0
 ################################################################################
-LOG_FILE="/var/log/hourly_cron.log"
+LOG_FILE="/var/log/cron/hourly_cron.log"
 
 echo "start to run hourly_cron.sh"
 cd "/Users/$(whoami)/Dropbox/private_data/work/vmware/code"

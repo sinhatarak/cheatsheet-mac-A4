@@ -50,23 +50,6 @@ function update_github(){
     done
 }
 
-function update_knowledgebase(){
-    local code_dir=${1?}
-    repo_list="book-reading-cloud linkedin-grow-influence maintain-it-blog maintain-github-repos developer-technical-selling setup-mac-devkit"
-    [ -d "$code_dir/knowledgebase" ] || mkdir -p "$code_dir/knowledgebase"
-    cd "$code_dir/knowledgebase"
-    for repo in ${repo_list[*]}; do
-        if [ ! -d "$repo" ]; then
-            echo "git clone git@github.com:dennyzhang/${repo}.git"
-            git clone "git@github.com:dennyzhang/${repo}.git"
-        else
-            (cd "$repo" && git pull origin master)
-        fi
-    done
-}
-
-update_knowledgebase "$HOME/Dropbox/git_code"
-
 update_github "$HOME/git_code"
 update_codecommit "$HOME/git_code"
 update_bitbucket "$HOME/git_code"

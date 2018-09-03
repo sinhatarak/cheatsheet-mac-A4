@@ -5,7 +5,7 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-08-21 20:55:28>
+## Updated: Time-stamp: <2018-09-03 00:58:28>
 ##-------------------------------------------------------------------
 # 0 20 * * 0 ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/weekly_cron.sh
 
@@ -19,8 +19,17 @@ function log() {
     fi
 }
 
+function shell_exit {
+    errcode=$?
+    if [ $errcode -ne 0 ]; then
+        log "ERROR: unexpected error"
+    fi
+}
+
+trap shell_exit SIGHUP SIGINT SIGTERM 0
 LOG_FILE="/var/log/cron/weekly_cron.log"
 date=$(date +'%Y%m%d')
+log "Start to run weekly_cron.sh"
 
 if [ -f /var/mail/mac ]; then
     > /var/mail/mac
@@ -30,10 +39,18 @@ for d in "cheatsheet.dennyzhang.com" \
              "quiz.dennyzhang.com" \
              "architect.dennyzhang.com" \
              "code.dennyzhang.com" \
+             "challenges-kubernetes" \
              "www.dennyzhang.com"; do
     cd "/Users/zdenny/Dropbox/git_code/$d"
+
     echo "Recursively git push in $d"
     make git-push >> /var/log/cron/weekly_git_publish_$d.log
+
+    echo "Recursively git pull in $d"
+    make git-pull >> /var/log/cron/weekly_git_publish_$d.log
+
+    echo "Recursively update wordpress in $d"
+    make refresh-wordpress >> /var/log/cron/weekly_git_publish_$d.log
 done
 
 log "Succeed to run weekly_cron.sh"

@@ -9,11 +9,11 @@
 ## Description :
 ## --
 ## Created : <2017-12-04>
-## Updated: Time-stamp: <2018-08-19 11:31:18>
+## Updated: Time-stamp: <2018-09-03 15:05:48>
 ##-------------------------------------------------------------------
 set -e
 
-function brew_install() {
+function brew_install {
     echo "Brew install packages"
     brew cask install iterm2
     brew install gpg aspell w3m shadowsocks-libev wget imagemagick msmtp
@@ -21,20 +21,20 @@ function brew_install() {
     brew install python3 getmail
     brew install jq ansible direnv
     brew install reattach-to-user-namespace
-    brew install chruby
+    brew install chruby mysql
     brew cask install ngrok
 }
 
-function brew_install_devkit() {
+function brew_install_devkit {
     echo "Brew install devkit"
     brew install kubernetes-helm
 }
 
-function python_setup() {
+function python_setup {
     pip3 install pylint
 }
 
-function download_files() {
+function download_files {
     echo "Download files"
     wget -O /usr/local/bin/gh-md-toc https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
     chmod a+x /usr/local/bin/gh-md-toc
@@ -44,20 +44,29 @@ function download_files() {
         echo 'source ~/.git-prompt.sh' > /usr/local/etc/bash_completion.d/git-prompt.sh
     fi
 }
-function fix_gpg() {
+
+function install_latex {
+    if ! which pdflatex >/dev/null 2>&1; then
+        # https://superuser.com/questions/1038612/where-do-i-get-the-pdflatex-program-for-mac
+        command="brew cask install mactex"
+        echo "$command" && eval "$command"
+    fi
+}
+
+function fix_gpg {
     # https://github.com/Homebrew/homebrew-core/issues/14737
     brew install pinentry-mac
     echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
     killall gpg-agent
 }
 
-function fetch_email() {
-    echo "Fetch emails"
+function setup_email {
+    echo "Setup email configurations"
     cp ~/Dropbox/private_data/emacs_stuff/backup_small/fetch_mail/.msmtprc ~/.msmtprc
     chmod 400 ~/.msmtprc
 }
 
-function create_crontab() {
+function create_crontab {
     echo "Define crontab"
     if [ ! -d /var/log/cron ]; then
         sudo mkdir -p chmod 755 /var/log/cron/ && sudo chmod 755 /var/log/cron/
@@ -67,7 +76,7 @@ function create_crontab() {
     # ~/Dropbox/private_data/emacs_stuff/backup_small/weekly_cron.sh
 }
 
-function ssh_config() {
+function ssh_config {
     if [ ! ~/.ssh/config ]; then
        ln ~/Dropbox/private_data/emacs_stuff/backup_small/ssh_key/config ~/.ssh/config
     fi
@@ -79,7 +88,7 @@ function ssh_config() {
     done
 }
 
-function config_bashrc() {
+function config_bashrc {
     if [ ! -f ~/.zshrc ]; then
         # https://github.com/robbyrussell/oh-my-zsh
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -91,10 +100,12 @@ function config_bashrc() {
 
 create_crontab
 ssh_config
+setup_email
 
 download_files
 brew_install
 brew_install_devkit
-fetch_email
 fix_gpg
+install_latex
+
 ## File: setup_mac.sh ends

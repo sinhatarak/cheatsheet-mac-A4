@@ -9,7 +9,7 @@
 ## Description :
 ## --
 ## Created : <2017-12-04>
-## Updated: Time-stamp: <2018-09-03 15:05:48>
+## Updated: Time-stamp: <2018-09-05 15:54:03>
 ##-------------------------------------------------------------------
 set -e
 
@@ -42,14 +42,6 @@ function download_files {
     if [ ! -f ~/.git-prompt.sh ]; then
         curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
         echo 'source ~/.git-prompt.sh' > /usr/local/etc/bash_completion.d/git-prompt.sh
-    fi
-}
-
-function install_latex {
-    if ! which pdflatex >/dev/null 2>&1; then
-        # https://superuser.com/questions/1038612/where-do-i-get-the-pdflatex-program-for-mac
-        command="brew cask install mactex"
-        echo "$command" && eval "$command"
     fi
 }
 
@@ -97,7 +89,16 @@ function config_bashrc {
     if [ ! ~/.bashrc ]; then
        ln ~/Dropbox/private_data/emacs_stuff/backup_small/bashrc ~/.bashrc
     fi
+}
 
+function config_git {
+    git config --global alias.co checkout
+    git config --global alias.br branch
+    git config --global alias.ci commit
+    git config --global alias.st status
+}
+
+config_git
 create_crontab
 ssh_config
 setup_email
@@ -106,6 +107,5 @@ download_files
 brew_install
 brew_install_devkit
 fix_gpg
-install_latex
 
 ## File: setup_mac.sh ends

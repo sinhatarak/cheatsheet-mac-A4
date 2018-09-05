@@ -5,7 +5,7 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-09-03 00:58:28>
+## Updated: Time-stamp: <2018-09-03 17:37:56>
 ##-------------------------------------------------------------------
 # 0 20 * * 0 ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/weekly_cron.sh
 
@@ -42,7 +42,6 @@ for d in "cheatsheet.dennyzhang.com" \
              "challenges-kubernetes" \
              "www.dennyzhang.com"; do
     cd "/Users/zdenny/Dropbox/git_code/$d"
-
     echo "Recursively git push in $d"
     make git-push >> /var/log/cron/weekly_git_publish_$d.log
 
@@ -53,5 +52,8 @@ for d in "cheatsheet.dennyzhang.com" \
     make refresh-wordpress >> /var/log/cron/weekly_git_publish_$d.log
 done
 
+cd "/Users/zdenny/Dropbox/git_code/cheatsheet.dennyzhang.com"
+echo "Refresh cheatsheet pdf"
+make refresh-cheatsheet >> /var/log/cron/weekly_refresh_cheatsheet.log
 log "Succeed to run weekly_cron.sh"
 ## File : weekly_cron.sh ends

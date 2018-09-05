@@ -1,18 +1,4 @@
-* org-mode configuration                                           :noexport:
-#+STARTUP: overview customtime noalign logdone showall
-#+DESCRIPTION: 
-#+KEYWORDS: 
-#+AUTHOR: Denny Zhang
-#+EMAIL:  denny@dennyzhang.com
-#+TAGS: noexport(n)
-#+PRIORITIES: A D C
-#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+EXPORT_EXCLUDE_TAGS: exclude noexport
-#+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
-#+LINK_UP:   
-#+LINK_HOME: 
-* Summary
+* Setup Mac For Your DevKit
 #+BEGIN_HTML
 <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
 <a href="https://github.com/DennyZhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
@@ -23,7 +9,7 @@
 
 <a href="http://makeapullrequest.com" target="_blank" rel="nofollow"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
 #+END_HTML
-* CheatSheet
+
 File me [[https://github.com/DennyZhang/setup-mac-devkit/issues][Issues]] or star [[https://github.com/DennyZhang/setup-mac-devkit][this repo]].
 
 See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
@@ -53,6 +39,20 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 |-------+---------------------------------------|
 | Xcode | =Library/Developer/Xcode/DerivedData= |
 | Trash | =~/.Trash=, =~/trash=                 |
+** org-mode configuration                                          :noexport:
+ #+STARTUP: overview customtime noalign logdone showall
+ #+DESCRIPTION: 
+ #+KEYWORDS: 
+ #+AUTHOR: Denny Zhang
+ #+EMAIL:  denny@dennyzhang.com
+ #+TAGS: noexport(n)
+ #+PRIORITIES: A D C
+ #+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+ #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+ #+EXPORT_EXCLUDE_TAGS: exclude noexport
+ #+SEQ_TODO: TODO HALF ASSIGN | DONE BYPASS DELEGATE CANCELED DEFERRED
+ #+LINK_UP:   
+ #+LINK_HOME: 
 * More Resources
 License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
 #+BEGIN_HTML

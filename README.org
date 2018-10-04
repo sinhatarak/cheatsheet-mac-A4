@@ -20,11 +20,37 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 | Share files across intranet | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX= |
 | Lock the screen             | =Ctrl + Shift + Power=                                                   |
 
+** Home Brew
+| Name                                    | Comment                                                  |
+|-----------------------------------------+----------------------------------------------------------|
+| Get brew version                        | =brew --version=                                         |
+| HomeBrew update                         | =brew update=                                            |
+| Install big binary                      | =brew cask install <package_name>=                       |
+| List all installed casks                | =brew cask list=, =brew cask help=                       |
+| uninstall big binary                    | =brew cask uninstall <package_name>=                     |
+| Upgrade all the casks                   | =brew cask upgrade=, =brew cask upgrade --no-quarantine= |
+| Brew install package with given version | =brew install python@2=                                  |
+
+[[https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md][link: How to Use Homebrew-Cask]]
+
+** zsh
+| Name                                    | Comment                                       |
+|-----------------------------------------+-----------------------------------------------|
+| Partially disable zsh's auto correction | alias vim='nocorrect vim' [[https://superuser.com/questions/439209/how-to-partially-disable-the-zshs-autocorrect][link: stackoverflow]] |
+
+** Install Packages
+| Name             | Comment                     |
+|------------------+-----------------------------|
+| Install realpath | =brew install coreutils=    |
+| Install lpass    | =brew install lastpass-cli= |
+
 ** Web browser
-| Name                            | Comment                            |
-|---------------------------------+------------------------------------|
-| Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist= |
-| Chrome undo closed tab          | =Command + Shift + T=              |
+| Name                            | Comment                                      |
+|---------------------------------+----------------------------------------------|
+| Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist=           |
+| Chrome undo closed tab          | =Command + Shift + T=                        |
+| Crhome scroll to top/bottom     | =Command + arrow up=, =Command + arrow down= |
+
 *** chromiue avoid change tgz to tar
   https://superuser.com/questions/940605/chromium-prevent-unpacking-tar-gz
   #+BEGIN_EXAMPLE
@@ -1918,3 +1944,6 @@ https://gist.github.com/kevin-smets/b91a34cea662d0c523968472a81788f7
 ~/.ssh/id_rsa
 ~/.ssh/id_rsa.pub
 
+* TODO consolidate mac cheatsheet: https://github.com/0nn0/terminal-mac-cheatsheet :noexport:
+* TODO cleanup the disk                                            :noexport:
+/cores/core/*

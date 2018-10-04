@@ -9,7 +9,7 @@
 ## Description :
 ## --
 ## Created : <2017-12-04>
-## Updated: Time-stamp: <2018-09-05 15:54:03>
+## Updated: Time-stamp: <2018-09-26 13:43:57>
 ##-------------------------------------------------------------------
 set -e
 
@@ -19,6 +19,7 @@ function brew_install {
     brew install gpg aspell w3m shadowsocks-libev wget imagemagick msmtp
     brew install telnet shellcheck go getmail tmux
     brew install python3 getmail
+    brew install pt
     brew install jq ansible direnv
     brew install reattach-to-user-namespace
     brew install chruby mysql

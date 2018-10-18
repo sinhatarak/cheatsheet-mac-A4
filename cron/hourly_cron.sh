@@ -5,9 +5,9 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-08-19 11:28:50>
+## Updated: Time-stamp: <2018-10-18 10:09:18>
 ##-------------------------------------------------------------------
-# 0 * * * * ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/hourly_cron.sh
+# 0 * * * * ~/Dropbox/git_code/cheatsheet.dennyzhang.com/cheatsheet-mac-A4/cron/hourly_cron.sh
 function log {
     local msg=$*
     date_timestamp=$(date +['%Y-%m-%d %H:%M:%S'])

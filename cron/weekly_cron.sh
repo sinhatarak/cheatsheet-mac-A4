@@ -5,9 +5,9 @@
 ## Description :
 ## --
 ## Created : <2013-09-05>
-## Updated: Time-stamp: <2018-09-03 17:37:56>
+## Updated: Time-stamp: <2018-10-18 10:09:12>
 ##-------------------------------------------------------------------
-# 0 20 * * 0 ~/Dropbox/git_code/knowledgebase/setup-mac-devkit/cron/weekly_cron.sh
+# 0 20 * * 0 ~/Dropbox/git_code/cheatsheet.dennyzhang.com/cheatsheet-mac-A4/cron/weekly_cron.sh
 
 function log() {
     local msg=$*

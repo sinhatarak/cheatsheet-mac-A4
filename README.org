@@ -1,4 +1,4 @@
-* Cheatsheet: mac                                                    :Tool:
+* Cheatsheet: mac                                                      :Tools:
 :PROPERTIES:
 :type:     linux, mac
 :export_file_name: cheatsheet-mac-A4.pdf

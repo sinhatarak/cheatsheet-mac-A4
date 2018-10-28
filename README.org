@@ -27,7 +27,7 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 |-----------------------------+--------------------------------------------------------------------------|
 | Share files across intranet | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX= |
 | Lock the screen             | =Ctrl + Shift + Power=                                                   |
-| Swap Cap and Command key    | [[https://support.apple.com/kb/PH25240?locale=en_US][link: support.apple.com]]                                                  |
+| Swap Cap and Command key    | [[https://support.apple.com/kb/PH25240?locale=en_US][Link: support.apple.com]]                                                  |
 ** Home Brew Basic
 | Name                                    | Comment                                                  |
 |-----------------------------------------+----------------------------------------------------------|
@@ -38,7 +38,7 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 | uninstall big binary                    | =brew cask uninstall <package_name>=                     |
 | Upgrade all the casks                   | =brew cask upgrade=, =brew cask upgrade --no-quarantine= |
 | Brew install package with given version | =brew install python@2=                                  |
-| Reference                               | [[https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md][link: How to Use Homebrew-Cask]]                           |
+| Reference                               | [[https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md][Link: How to Use Homebrew-Cask]]                           |
 ** Home Brew Install Packages
 | Name                       | Comment                     |
 |----------------------------+-----------------------------|
@@ -49,7 +49,7 @@ See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][
 ** zsh
 | Name                                    | Comment                                       |
 |-----------------------------------------+-----------------------------------------------|
-| Partially disable zsh's auto correction | alias vim='nocorrect vim' [[https://superuser.com/questions/439209/how-to-partially-disable-the-zshs-autocorrect][link: stackoverflow]] |
+| Partially disable zsh's auto correction | alias vim='nocorrect vim' [[https://superuser.com/questions/439209/how-to-partially-disable-the-zshs-autocorrect][Link: stackoverflow]] |
 ** Web browser
 | Name                            | Comment                                      |
 |---------------------------------+----------------------------------------------|

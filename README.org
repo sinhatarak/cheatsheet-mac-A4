@@ -18,10 +18,9 @@
 
 - PDF Link: [[https://github.com/dennyzhang/cheatsheet-mac-A4/blob/master/cheatsheet-mac-A4.pdf][cheatsheet-mac-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/tools/][tools]]
 - Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-mac-A4
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-shell-A4][Shell CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
 File me [[https://github.com/dennyzhang/cheatsheet-uaac-A4/issues][Issues]] or star [[https://github.com/DennyZhang/cheatsheet-uaac-A4][this repo]].
-
-See more CheatSheets from Denny: [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 ** Summary
 | Name                        | Comment                                                                  |
 |-----------------------------+--------------------------------------------------------------------------|

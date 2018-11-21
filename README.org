@@ -1951,3 +1951,6 @@ If we want to prevent, if need to change in server side. Doesn't seem to have a 
 In server side: `make sure your web server serves .tar.gz files without the content-encoding: gzip header.`
 #+END_EXAMPLE
 * TODO consolidate mac cheatsheet: https://github.com/0nn0/terminal-mac-cheatsheet :noexport:
+* TODO mac disable dictionary                                      :noexport:
+https://www.tekrevue.com/tip/how-to-turn-off-multitouch-trackpad-look-up-in-os-x/
+* [#A] example: https://github.com/thoughtbot/laptop               :noexport:

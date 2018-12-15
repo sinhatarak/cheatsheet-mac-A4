@@ -9,7 +9,7 @@
 <div id="the whole thing" style="overflow: hidden;">
 <div style="float: left; padding: 5px"> <a href="https://www.linkedin.com/in/dennyzhang001"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a></div>
 <div style="float: left; padding: 5px"><a href="https://github.com/dennyzhang"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a></div>
-<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a></div>
+<div style="float: left; padding: 5px"><a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a></div>
 </div>
 
 <br/><br/>
@@ -18,15 +18,16 @@
 
 - PDF Link: [[https://github.com/dennyzhang/cheatsheet-mac-A4/blob/master/cheatsheet-mac-A4.pdf][cheatsheet-mac-A4.pdf]], Category: [[https://cheatsheet.dennyzhang.com/category/tools/][tools]]
 - Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-mac-A4
-- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-shell-A4][Shell CheatSheet]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
+- Related posts: [[https://cheatsheet.dennyzhang.com/cheatsheet-shell-A4][Shell CheatSheet]], [[https://cheatsheet.dennyzhang.com/cheatsheet-browser-A4][CheatSheet: Web Browser]], [[https://github.com/topics/denny-cheatsheets][#denny-cheatsheets]]
 
 File me [[https://github.com/dennyzhang/cheatsheet-uaac-A4/issues][Issues]] or star [[https://github.com/DennyZhang/cheatsheet-uaac-A4][this repo]].
 ** Summary
-| Name                        | Comment                                                                  |
-|-----------------------------+--------------------------------------------------------------------------|
-| Share files across intranet | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX= |
-| Lock the screen             | =Ctrl + Shift + Power=                                                   |
-| Swap Cap and Command key    | [[https://support.apple.com/kb/PH25240?locale=en_US][Link: support.apple.com]]                                                  |
+| Name                          | Comment                                                                  |
+|-------------------------------+--------------------------------------------------------------------------|
+| Share files across intranet   | =System Preferences -> Sharing -> File Sharing=, then =\\192.168.XX.XXX= |
+| Lock the screen               | =Ctrl + Shift + Power=                                                   |
+| [[https://www.laptopmag.com/articles/change-macs-default-screenshot-directory][Customize screenshot location]] | =defaults write com.apple.screencapture location ~/Desktop/Screenshots=  |
+| Swap Cap and Command key      | [[https://support.apple.com/kb/PH25240?locale=en_US][Link: support.apple.com]]                                                  |
 ** Home Brew Basic
 | Name                                    | Comment                                                  |
 |-----------------------------------------+----------------------------------------------------------|
@@ -38,23 +39,19 @@ File me [[https://github.com/dennyzhang/cheatsheet-uaac-A4/issues][Issues]] or s
 | Upgrade all the casks                   | =brew cask upgrade=, =brew cask upgrade --no-quarantine= |
 | Brew install package with given version | =brew install python@2=                                  |
 | Reference                               | [[https://github.com/Homebrew/homebrew-cask/blob/master/USAGE.md][Link: How to Use Homebrew-Cask]]                           |
-** Home Brew Install Packages
-| Name                       | Comment                     |
-|----------------------------+-----------------------------|
-| Install all basic packages | [[https://github.com/dennyzhang/cheatsheet-mac-A4/blob/master/code/setup_mac.sh][code/setup_mac.sh]]           |
-| Install iterm2             | =brew cask install iterm2=  |
-| Install realpath           | =brew install coreutils=    |
-| Install lpass              | =brew install lastpass-cli= |
+** Mac Install Packages
+| Name                       | Comment                                  |
+|----------------------------+------------------------------------------|
+| Install all basic packages | [[https://github.com/dennyzhang/cheatsheet-mac-A4/blob/master/code/setup_mac.sh][code/setup_mac.sh]]                        |
+| Install iterm2             | =brew cask install iterm2=               |
+| [[https://bosh.io/docs/cli-v2-install/][Install bosh]]               | =brew install cloudfoundry/tap/bosh-cli= |
+| Install realpath           | =brew install coreutils=                 |
+| Install lpass              | =brew install lastpass-cli=              |
+| Mac install jvm            | [[https://www.java.com/en/download/mac_download.jsp][Link: Download Java for Mac OS X]]         |
 ** zsh
 | Name                                    | Comment                                       |
 |-----------------------------------------+-----------------------------------------------|
 | Partially disable zsh's auto correction | alias vim='nocorrect vim' [[https://superuser.com/questions/439209/how-to-partially-disable-the-zshs-autocorrect][Link: stackoverflow]] |
-** Web browser
-| Name                            | Comment                                      |
-|---------------------------------+----------------------------------------------|
-| Backup mac OSX safari bookmarks | =~/Library/Safari/Bookmarks.plist=           |
-| Chrome undo closed tab          | =Command + Shift + T=                        |
-| Crhome scroll to top/bottom     | =Command + arrow up=, =Command + arrow down= |
 ** Clean & Release disk
 | Name  | Comment                               |
 |-------+---------------------------------------|
@@ -63,12 +60,12 @@ File me [[https://github.com/dennyzhang/cheatsheet-uaac-A4/issues][Issues]] or s
 ** More Resources
 License: Code is licensed under [[https://www.dennyzhang.com/wp-content/mit_license.txt][MIT License]].
 #+BEGIN_HTML
-<a href="https://www.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
-<a href="https://www.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" width="201" height="268" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/denny_201706.png"></a>
+<a href="https://cheatsheet.dennyzhang.com"><img align="right" src="https://raw.githubusercontent.com/dennyzhang/cheatsheet.dennyzhang.com/master/images/cheatsheet_dns.png"></a>
 
 <a href="https://www.linkedin.com/in/dennyzhang001"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/linkedin.png" alt="linkedin" /></a>
 <a href="https://github.com/dennyzhang"><img align="bottom"src="https://www.dennyzhang.com/wp-content/uploads/sns/github.png" alt="github" /></a>
-<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://slack.dennyzhang.com/badge.svg" alt="slack"/></a>
+<a href="https://www.dennyzhang.com/slack" target="_blank" rel="nofollow"><img align="bottom" src="https://www.dennyzhang.com/wp-content/uploads/sns/slack.png" alt="slack"/></a>
 #+END_HTML
 * org-mode configuration                                           :noexport:
 #+STARTUP: overview customtime noalign logdone showall
@@ -1954,3 +1951,22 @@ In server side: `make sure your web server serves .tar.gz files without the cont
 * TODO mac disable dictionary                                      :noexport:
 https://www.tekrevue.com/tip/how-to-turn-off-multitouch-trackpad-look-up-in-os-x/
 * [#A] example: https://github.com/thoughtbot/laptop               :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO consolidate: https://github.com/jaywcjlove/awesome-mac      :noexport:
+* TODO consolidate: https://github.com/0nn0/terminal-mac-cheatsheet :noexport:
+* #  --8<-------------------------- separator ------------------------>8-- :noexport:
+* TODO [#A] mac docker run: echo: write error: No space left on device :noexport:
+#+BEGIN_EXAMPLE
+   /Users/zdenny/Dropbox/private_data/work/vmware/code/pks-gear2-ci/dockerfile/jenkins-testbed  docker run -p 8080:8080 -p 50000:50000 pksoctopus/jenkins:nimbus                                                                                                                  denny ✘ ✭  ✔ 0
+/usr/local/bin/jenkins.sh: line 6: echo: write error: No space left on device
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
+   /Users/zdenny/Dropbox/private_data/work/vmware/code/pks-gear2-ci/dockerfile/jenkins-testbed  df -h                                                                                                                                                                             denny ✘ ✭  ✘ 1
+Filesystem                                Size   Used  Avail Capacity iused      ifree %iused  Mounted on
+/dev/disk1                               465Gi  299Gi  165Gi    65% 2097087 4292870192    0%   /
+devfs                                    184Ki  184Ki    0Bi   100%     638          0  100%   /dev
+map -hosts                                 0Bi    0Bi    0Bi   100%       0          0  100%   /net
+map auto_home                              0Bi    0Bi    0Bi   100%       0          0  100%   /home
+/Library/Input Methods/SogouWBInput.app  465Gi  299Gi  165Gi    65% 2097121 4292870158    0%   /private/var/folders/ty/5x436r4s61516hsm5h60wks40000gq/T/AppTranslocation/4394A17C-BD7B-43F5-97B3-3534DC4E84B8
+#+END_EXAMPLE
